@@ -3,9 +3,8 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Circle-loader generator</title>
-	<script type="text/javascript" src="/js/jquery.js"></script>
-	<script type="text/javascript" src="/js/jquery.circle-loader.js"></script>
-	<script type="text/javascript" src="/js/main.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.circle-loader.js"></script>
 </head>
 <body>
 <style>
@@ -15,12 +14,17 @@ body {
 }
 #canvas {
 	background-color: #F4F4F4;
-	height: 400px;
+	height: 28px;
 	margin-top: 1em;
-	width: 400px;
+	width: 28px;
 }
 </style>
-jQuery-plugin which may generate a simple svg-circle-loader.
+<script type="text/javascript">
+$(function() {
+    $("#canvas").circleLoader({strokeWidth: 6, duration: 5000});
+});
+</script>
+jQuery-plugin which may generate a simple svg-circle-loader, like this one:
 <div id="canvas"></div>
 </body>
 </html>
