@@ -13,7 +13,7 @@ It's better be empty, as the creating canvas will fill all of it. And here is a
 little bit of js:
 ```js
 $(function() {
-    $("#loader").circleLoader();
+	$("#loader").circleLoader();
 });
 ```
 
@@ -25,3 +25,11 @@ List of paramters:
  - `strokeWidth` — loader width: in px or percent. Percentage value will 
 calculate uppon the canvas size;
  - `duration` — one cycle animation duration.
+
+## Methods
+
+`$.circleLoader()` returns `CircleLoader` object which has the following methods:
+
+ - `Start()` – start animation (if animation was paused or stopped)
+ - `Stop()` – stop animation and clear the canvas
+ - `Pause()` – only stops the animation.
