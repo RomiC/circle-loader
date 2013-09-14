@@ -21,10 +21,11 @@ $(function() {
 
 List of paramters:
 
- - `stroke` — loader color — any color in valid for html format;
- - `strokeWidth` — loader width: in px or percent. Percentage value will 
+ - `stroke` – loader color — any color in valid for html format;
+ - `strokeWidth` – loader width: in px or percent. Percentage value will 
 calculate uppon the canvas size;
- - `duration` — one cycle animation duration.
+ - `duration` – one cycle animation duration.
+ - `autostart` – automatically start animation on page load
 
 ## Methods
 
@@ -32,4 +33,5 @@ calculate uppon the canvas size;
 
  - `Start()` – start animation (if animation was paused or stopped)
  - `Stop()` – stop animation and clear the canvas
- - `Pause()` – only stops the animation.
+ - `Pause()` – only stops the animation; the next `Start()` invoke will 
+ continious the animation.

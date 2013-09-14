@@ -20,6 +20,11 @@
 		 */
 		duration: 7000,
 		/**
+		 * Start animation automatically on page load
+		 * @type {Boolean}
+		 */
+		autostart: true,
+		/**
 		 * Angle of rotation per step (degrees)
 		 * @type {Number}
 		 */
@@ -118,11 +123,11 @@
 		 * @type {Number}
 		 */
 		var timerDelay = Math.round(5 / 360 * settings.duration);
-        /**
-         * Animation in progress flag
-         * @type {Boolean}
-         */
-        var isAnimated = false;
+		/**
+		 * Animation in progress flag
+		 * @type {Boolean}
+		 */
+		var isAnimated = false;
 
 		/**
 		 * Method for creating animation
@@ -171,7 +176,9 @@
 			xmlns: "http://www.w3.org/2000/svg"
 		}));		
 		$("svg", cont)[0].appendChild(arc);
-		Animate();
+		if (settings.autostart === true) {
+			Animate();
+		}
 	};
 	
 	$.fn.circleLoader = function(s) {
