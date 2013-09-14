@@ -28,7 +28,7 @@
 		 * Angle of rotation per step (degrees)
 		 * @type {Number}
 		 */
-		angleStep: 2
+		angleStep: 5
 	};
 
 	/**
@@ -122,7 +122,7 @@
 		 * Delay between animation frames
 		 * @type {Number}
 		 */
-		var timerDelay = Math.round(5 / 360 * settings.duration);
+		var timerDelay = Math.round(settings.angleStep / 360 * settings.duration);
 		/**
 		 * Animation in progress flag
 		 * @type {Boolean}
