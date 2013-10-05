@@ -1,8 +1,9 @@
 {
-	"name": "circle-loader",
-	"version": "0.2.3",
-	"devDependenciew": {
-		"grunt": "~0.4.1",
-		"grunt-contrib-uglify": "~0.2.2"
-	}
+  "name": "circle-loader",
+  "version": "0.2.3",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-watch": "~0.5.3"
+  }
 }
